@@ -1,3 +1,5 @@
+using System.IO;
+
 namespace BaseAspNetAngularUnity.DataAccess.Migrations
 {
     using System;
@@ -5,7 +7,7 @@ namespace BaseAspNetAngularUnity.DataAccess.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<BaseAspNetAngularUnity.DataAccess.Models.ApplicationDbContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<BaseAspNetAngularUnity.DataAccess.DataAccessContext>
     {
 		
         public Configuration()
@@ -13,7 +15,7 @@ namespace BaseAspNetAngularUnity.DataAccess.Migrations
             AutomaticMigrationsEnabled = true;
         }
 
-        protected override void Seed(BaseAspNetAngularUnity.DataAccess.Models.ApplicationDbContext context)
+        protected override void Seed(BaseAspNetAngularUnity.DataAccess.DataAccessContext context)
         {
             //  This method will be called after migrating to the latest version.
 
@@ -27,6 +29,18 @@ namespace BaseAspNetAngularUnity.DataAccess.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
+
+			AddLoggingTables(context);
         }
-    }
+
+		private void AddLoggingTables(DataAccessContext context)
+		{
+			string databaseSql =
+				new StreamReader(
+					this.GetType()
+						.Assembly.GetManifestResourceStream(
+							"BaseAspNetAngularUnity.DataAccess.Migrations.Scripts.CreateLoggingDatabaseObjects.sql")).ReadToEnd();
+			context.Database.ExecuteSqlCommand(databaseSql);
+		}
+	}
 }

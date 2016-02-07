@@ -13,7 +13,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{8A23E4C5
 	ProjectSection(SolutionItems) = preProject
 		build\BaseAspNetAngularUnit.ncover = build\BaseAspNetAngularUnit.ncover
 		build\BaseAspNetAngularUnit.xml = build\BaseAspNetAngularUnit.xml
+		build\testfast_nc5.bat = build\testfast_nc5.bat
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logging", "Logging", "{48BF2DDE-B816-4553-A7C6-B769570E528D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logging.Lib", "Logging\Logging.Lib\Logging.Lib.csproj", "{24297545-627C-4D60-9497-E78211677E76}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,8 +38,18 @@ Global
 		{8B7A391B-B6AA-4168-A151-49A6AEC5855A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B7A391B-B6AA-4168-A151-49A6AEC5855A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B7A391B-B6AA-4168-A151-49A6AEC5855A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24297545-627C-4D60-9497-E78211677E76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24297545-627C-4D60-9497-E78211677E76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24297545-627C-4D60-9497-E78211677E76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24297545-627C-4D60-9497-E78211677E76}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{24297545-627C-4D60-9497-E78211677E76} = {48BF2DDE-B816-4553-A7C6-B769570E528D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Data.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Logging.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Logging.Database.6.0.1304.0\lib\NET45
 	EndGlobalSection
 EndGlobal

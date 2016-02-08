@@ -238,3 +238,4 @@ _Pvt_Extensions
 build/simian.xml
 /build/Wm.Barrett*
 /build/coverage
+/build/TestResults.trx

@@ -1,1 +1,1 @@
-msbuild ElasticTransfer.xml /t:Clean 
+msbuild BaseAspNetAngularUnity.xml /t:Clean 

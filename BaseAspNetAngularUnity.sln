@@ -5,20 +5,20 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseAspNetAngularUnity", "src\BaseAspNetAngularUnity\BaseAspNetAngularUnity.csproj", "{B8E200B0-5F17-4034-B7F6-6EE8DA0CBDF0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseAspNetAngularUnity.Tests", "src\BaseAspNetAngularUnity.Tests\BaseAspNetAngularUnity.Tests.csproj", "{51F793A6-E588-4AA2-87F7-881DEB250D2B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseAspNetAngularUnity.Test", "src\BaseAspNetAngularUnity.Test\BaseAspNetAngularUnity.Test.csproj", "{51F793A6-E588-4AA2-87F7-881DEB250D2B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseAspNetAngularUnity.DataAccess", "src\BaseAspNetAngularUnity.DataAccess\BaseAspNetAngularUnity.DataAccess.csproj", "{8B7A391B-B6AA-4168-A151-49A6AEC5855A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{8A23E4C5-2D6C-4783-8B48-BBE9836ECAED}"
 	ProjectSection(SolutionItems) = preProject
-		build\BaseAspNetAngularUnit.ncover = build\BaseAspNetAngularUnit.ncover
-		build\BaseAspNetAngularUnit.xml = build\BaseAspNetAngularUnit.xml
+		build\BaseAspNetAngularUnity.ncover = build\BaseAspNetAngularUnity.ncover
+		build\BaseAspNetAngularUnity.xml = build\BaseAspNetAngularUnity.xml
 		build\testfast_nc5.bat = build\testfast_nc5.bat
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logging", "Logging", "{48BF2DDE-B816-4553-A7C6-B769570E528D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logging.Lib", "Logging\Logging.Lib\Logging.Lib.csproj", "{24297545-627C-4D60-9497-E78211677E76}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logging.Lib", "src\Logging\Logging.Lib\Logging.Lib.csproj", "{24297545-627C-4D60-9497-E78211677E76}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

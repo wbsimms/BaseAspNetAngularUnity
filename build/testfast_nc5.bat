@@ -1,2 +1,2 @@
 @echo off
-msbuild BaseAspNetAngularUnit.xml /t:SimianReport;BuildCommon;AddEnableCoverage;TestOnly;GetCoverageReport
+msbuild BaseAspNetAngularUnity.xml /t:SimianReport;BuildCommon;AddEnableCoverage;DropDatabase;CreateDatabase;TestOnly;GetCoverageReport

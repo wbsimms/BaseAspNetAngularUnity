@@ -64,7 +64,7 @@
 		<Target Name="DropDatabase">
 			<Message Text="====== Drop Database =====" />
 			<!--<Exec Command='iisreset' IgnoreExitCode="True" />-->
-			<Exec Command='sqlcmd.exe -S (local) -E -Q "drop database [RuleGist_DEV]"' IgnoreExitCode="False" />
+			<Exec Command='sqlcmd.exe -S (local) -E -Q "drop database [BaseAspNetAngularUnity_DEV]"' IgnoreExitCode="False" />
 		</Target>
 
 		<Target Name="CreateDatabaseCI">

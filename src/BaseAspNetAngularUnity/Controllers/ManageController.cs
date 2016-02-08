@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
@@ -10,7 +11,8 @@ using BaseAspNetAngularUnity.Models;
 
 namespace BaseAspNetAngularUnity.Controllers
 {
-    [Authorize]
+	[ExcludeFromCodeCoverage]
+	[Authorize]
     public class ManageController : Controller
     {
         private ApplicationSignInManager _signInManager;

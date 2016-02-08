@@ -11,7 +11,7 @@ namespace BaseAspNetAngularUnity.DataAccess
 	public interface IDataAccessContext
 	{
 		DbSet<Log> Logs { get; set; }
-
+		DbSet<CategoryLog> CategoryLogs { get; set;}
 	}
 
 	public class DataAccessContext : IdentityDbContext<ApplicationUser>, IDataAccessContext
@@ -26,6 +26,7 @@ namespace BaseAspNetAngularUnity.DataAccess
 		}
 
 		public DbSet<Log> Logs { get; set; }
+		public DbSet<CategoryLog> CategoryLogs { get; set; }
 
 		public static DataAccessContext Create()
 		{

@@ -2,8 +2,8 @@
 	<PropertyGroup>
 		<EFVersion>6.1.3</EFVersion>
 		<MainSln>..\BaseAspNetAngularUnity.sln</MainSln>
-    <BaseAspNetAngularUnity>..\src\BaseAspNetAngularUnity.Test\bin\BaseAspNetAngularUnity.Test.dll</BaseAspNetAngularUnity>
-    <TestContainers>/testcontainer:$(BaseAspNetAngularUnity)</TestContainers>
+		<BaseAspNetAngularUnity>..\src\BaseAspNetAngularUnity.Test\bin\BaseAspNetAngularUnity.Test.dll</BaseAspNetAngularUnity>
+		<TestContainers>/testcontainer:$(BaseAspNetAngularUnity)</TestContainers>
 	</PropertyGroup>
 
 	<Target Name="TestFast">
@@ -48,8 +48,8 @@
 
 	<Target Name="SimianReport">
 		<Exec Command='simian-2.4.0.exe -includes=../src/**/*.cs -excludes=**/obj -excludes=**/bin -formatter=xml -failOnDuplication- > simian.xml' />
-			<Exec Command='SimianConsole.exe simian.xml yes' />
-		</Target>
+		<Exec Command='SimianConsole.exe simian.xml yes' />
+	</Target>
 
 		<Target Name="Clean">
 			<Message Text="================= Cleaning $(MainSln)"></Message>
@@ -70,12 +70,12 @@
 		<Target Name="CreateDatabaseCI">
 			<Message Text="================= Creating Database"></Message>
 			<CallTarget Targets="DropDatabaseCI" />
- 			<CallTarget Targets="TransformsCI" />
+			<CallTarget Targets="TransformsCI" />
 			<Copy SourceFiles="..\packages\EntityFramework.$(EFVersion)\tools\migrate.exe" DestinationFolder="..\src\BaseAspNetAngularUnity.DataAccess\bin\" ></Copy>
 			<Exec WorkingDirectory="..\src\BaseAspNetAngularUnity.DataAccess\bin\" Command='migrate BaseAspNetAngularUnity.DataAccess.dll /startUpConfigurationFile=BaseAspNetAngularUnity.DataAccess.dll.config' />
 		</Target>
 
-<!-- 		<Target Name='TransformsCI'>
+		<!-- 		<Target Name='TransformsCI'>
 			<Exec Command="ctt.exe t:..\src\BaseAspNetAngularUnity.DataAccess\App.CI.config s:..\src\BaseAspNetAngularUnity.DataAccess\App.config d:..\src\DataAccess\BaseAspNetAngularUnity.DataAccess\bin\BaseAspNetAngularUnity.DataAccess.dll.config" />
 			<Exec Command="ctt.exe t:..\src\BaseAspNetAngularUnity.DataAccess\App.CI.config s:..\src\BaseAspNetAngularUnity.DataAccess\App.config d:..\src\DataAccess\BaseAspNetAngularUnity.DataAccess.Test\bin\BaseAspNetAngularUnity.DataAccess.Test.dll.config" />
 			<Exec Command="ctt.exe t:..\src\BaseAspNetAngularUnity.DataAccess\App.CI.config s:..\src\Logging\Logging.Lib\App.config d:..\src\Logging\Logging.Lib.Test\bin\Logging.Lib.Test.dll.config" />
@@ -86,7 +86,7 @@
 			<Exec Command="ctt.exe t:..\src\BaseAspNetAngularUnity.DataAccess\App.CI.config s:..\src\ResultsImporter.Lib.Test\App.config d:..\src\ResultsImporter.Lib.Test\bin\ResultsImporter.Lib.Test.dll.config" />
 		</Target> -->
 
-  <Target Name="CreateDatabase">
+		<Target Name="CreateDatabase">
 			<Message Text="================= Creating Database"></Message>
 			<CallTarget Targets="DropDatabase" />
 			<Copy SourceFiles="..\packages\EntityFramework.$(EFVersion)\tools\migrate.exe" DestinationFolder="..\src\BaseAspNetAngularUnity.DataAccess\bin\" ></Copy>

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
@@ -14,7 +15,8 @@ using BaseAspNetAngularUnity.Models;
 
 namespace BaseAspNetAngularUnity
 {
-    public class EmailService : IIdentityMessageService
+	[ExcludeFromCodeCoverage]
+	public class EmailService : IIdentityMessageService
     {
         public Task SendAsync(IdentityMessage message)
         {
@@ -23,7 +25,8 @@ namespace BaseAspNetAngularUnity
         }
     }
 
-    public class SmsService : IIdentityMessageService
+	[ExcludeFromCodeCoverage]
+	public class SmsService : IIdentityMessageService
     {
         public Task SendAsync(IdentityMessage message)
         {
@@ -32,8 +35,9 @@ namespace BaseAspNetAngularUnity
         }
     }
 
-    // Configure the application user manager used in this application. UserManager is defined in ASP.NET Identity and is used by the application.
-    public class ApplicationUserManager : UserManager<ApplicationUser>
+	[ExcludeFromCodeCoverage]
+	// Configure the application user manager used in this application. UserManager is defined in ASP.NET Identity and is used by the application.
+	public class ApplicationUserManager : UserManager<ApplicationUser>
     {
         public ApplicationUserManager(IUserStore<ApplicationUser> store)
             : base(store)

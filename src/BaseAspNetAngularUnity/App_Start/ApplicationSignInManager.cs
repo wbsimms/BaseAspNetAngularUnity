@@ -1,3 +1,4 @@
+using System.Diagnostics.CodeAnalysis;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using BaseAspNetAngularUnity.DataAccess.Models;
@@ -7,6 +8,7 @@ using Microsoft.Owin.Security;
 
 namespace BaseAspNetAngularUnity
 {
+	[ExcludeFromCodeCoverage]
 	public class ApplicationSignInManager : SignInManager<ApplicationUser, string>
 	{
 		public ApplicationSignInManager(ApplicationUserManager userManager, IAuthenticationManager authenticationManager)

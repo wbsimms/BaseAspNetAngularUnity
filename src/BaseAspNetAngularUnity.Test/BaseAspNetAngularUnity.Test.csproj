@@ -136,8 +136,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfigTest.cs" />
-    <Compile Include="App_Start\UnityConfig.cs" />
-    <Compile Include="App_Start\UnityMvcActivator.cs" />
     <Compile Include="App_Start\UnityMvcActivatorTest.cs" />
     <Compile Include="App_Start\UnityConfigTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

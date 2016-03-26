@@ -35,6 +35,7 @@ namespace BaseAspNetAngularUnity.DataAccess
 			container.RegisterType<IUnitOfWorkFactory, UnitOfWorkFactory>();
 			container.RegisterType<IUserManagerProxy, UserManagerProxy>();
 			container.RegisterType<ILogRepository<Log>, LogRepository<Log>>();
+			container.RegisterType<ICategoryLogRepository<CategoryLog>, CategoryLogRepository<CategoryLog>>();
 		}
 
 		public UnityContainer Container

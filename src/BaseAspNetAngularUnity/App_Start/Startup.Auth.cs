@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 using BaseAspNetAngularUnity.DataAccess;
 using BaseAspNetAngularUnity.DataAccess.Models;
 using Microsoft.AspNet.Identity;
@@ -11,7 +12,8 @@ using BaseAspNetAngularUnity.Models;
 
 namespace BaseAspNetAngularUnity
 {
-    public partial class Startup
+	[ExcludeFromCodeCoverage]
+	public partial class Startup
     {
         // For more information on configuring authentication, please visit http://go.microsoft.com/fwlink/?LinkId=301864
         public void ConfigureAuth(IAppBuilder app)

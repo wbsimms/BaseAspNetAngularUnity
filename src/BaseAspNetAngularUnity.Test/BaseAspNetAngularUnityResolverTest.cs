@@ -12,5 +12,12 @@ namespace BaseAspNetAngularUnity.Test
 			var resolver = BaseAspNetAngularUnityResolver.Instance;
 			Assert.IsNotNull(resolver);
 		}
+
+		[TestMethod]
+		public void ResetTest()
+		{
+			BaseAspNetAngularUnityResolver.Instance.Reset();
+		}
+
 	}
 }

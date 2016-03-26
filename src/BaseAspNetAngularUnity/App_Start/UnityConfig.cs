@@ -39,9 +39,8 @@ namespace BaseAspNetAngularUnity.App_Start
 
 			// TODO: Register your types here
 			// container.RegisterType<IProductRepository, ProductRepository>();
+			BaseAspNetAngularUnityResolver.Instance.Register(container);
 			DataAccessResolver.Instance.Register(container);
-			container.RegisterType<AccountController>(new InjectionConstructor());
-			container.RegisterType<ManageController>(new InjectionConstructor());
 		}
     }
 }

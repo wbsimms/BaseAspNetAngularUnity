@@ -3,7 +3,8 @@
 		<EFVersion>6.1.3</EFVersion>
 		<MainSln>..\BaseAspNetAngularUnity.sln</MainSln>
 		<BaseAspNetAngularUnity>..\src\BaseAspNetAngularUnity.Test\bin\BaseAspNetAngularUnity.Test.dll</BaseAspNetAngularUnity>
-		<TestContainers>/testcontainer:$(BaseAspNetAngularUnity)</TestContainers>
+    <Logging>..\src\Logging\Logging.Lib.Test\bin\Logging.Lib.Test.dll</Logging>
+    <TestContainers>/testcontainer:$(BaseAspNetAngularUnity) /testcontainer:$(Logging)</TestContainers>
 	</PropertyGroup>
 
 	<Target Name="TestFast">

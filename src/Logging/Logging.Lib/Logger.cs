@@ -28,7 +28,6 @@ namespace Logging.Lib
 			get { return instance; }
 		}
 
-		[ExcludeFromCodeCoverage]
 		private Logger()
 		{
 			string connectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;

@@ -20,6 +20,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logging", "Logging", "{48BF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logging.Lib", "src\Logging\Logging.Lib\Logging.Lib.csproj", "{24297545-627C-4D60-9497-E78211677E76}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logging.Lib.Test", "src\Logging\Logging.Lib.Test\Logging.Lib.Test.csproj", "{756ADF5C-00FA-48D1-9174-10FACDA9EDD8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,12 +44,17 @@ Global
 		{24297545-627C-4D60-9497-E78211677E76}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24297545-627C-4D60-9497-E78211677E76}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24297545-627C-4D60-9497-E78211677E76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{756ADF5C-00FA-48D1-9174-10FACDA9EDD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{756ADF5C-00FA-48D1-9174-10FACDA9EDD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{756ADF5C-00FA-48D1-9174-10FACDA9EDD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{756ADF5C-00FA-48D1-9174-10FACDA9EDD8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{24297545-627C-4D60-9497-E78211677E76} = {48BF2DDE-B816-4553-A7C6-B769570E528D}
+		{756ADF5C-00FA-48D1-9174-10FACDA9EDD8} = {48BF2DDE-B816-4553-A7C6-B769570E528D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Data.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Logging.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Logging.Database.6.0.1304.0\lib\NET45

@@ -28,32 +28,43 @@
 			"description" : null,
 			"serverFilter" : false,
 			"enabled" : true,
-			"filterRules" : [{
-					"include" : true,
-					"field" : "Module",
-					"condition" : "Matches",
-					"value" : "BaseAspNetAngularUnity.dll",
-					"serverRule" : false
-				}, {
-					"include" : false,
-					"field" : "Attribute",
-					"condition" : "Matches",
-					"value" : "System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage",
-					"serverRule" : false
-				}, {
-					"include" : false,
-					"field" : "Attribute",
-					"condition" : "Matches",
-					"value" : "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
-					"serverRule" : false
-				}, {
-					"include" : false,
-					"field" : "Attribute",
-					"condition" : "Matches",
-					"value" : "System.CodeDom.Compiler.GeneratedCodeAttribute",
-					"serverRule" : false
-				}
-			]
+            "filterRules": [
+                {
+                    "include": true,
+                    "field": "Module",
+                    "condition": "Matches",
+                    "value": "BaseAspNetAngularUnity.dll",
+                    "serverRule": false
+                },
+                {
+                    "include": true,
+                    "field": "Module",
+                    "condition": "Matches",
+                    "value": "Logging.Lib.dll",
+                    "serverRule": false
+                },
+                {
+                    "include": false,
+                    "field": "Attribute",
+                    "condition": "Matches",
+                    "value": "System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage",
+                    "serverRule": false
+                },
+                {
+                    "include": false,
+                    "field": "Attribute",
+                    "condition": "Matches",
+                    "value": "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+                    "serverRule": false
+                },
+                {
+                    "include": false,
+                    "field": "Attribute",
+                    "condition": "Matches",
+                    "value": "System.CodeDom.Compiler.GeneratedCodeAttribute",
+                    "serverRule": false
+                }
+            ]
 		},
 		"postCoverageFilters" : []
 	}

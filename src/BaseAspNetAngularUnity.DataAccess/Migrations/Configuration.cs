@@ -1,3 +1,4 @@
+using System.Diagnostics.CodeAnalysis;
 using System.IO;
 
 namespace BaseAspNetAngularUnity.DataAccess.Migrations
@@ -7,6 +8,7 @@ namespace BaseAspNetAngularUnity.DataAccess.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
+	[ExcludeFromCodeCoverage]
     internal sealed class Configuration : DbMigrationsConfiguration<BaseAspNetAngularUnity.DataAccess.DataAccessContext>
     {
 		

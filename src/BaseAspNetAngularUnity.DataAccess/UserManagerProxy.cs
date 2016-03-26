@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Data.Entity;
 using System.Linq;
+using System.Security.Claims;
+using System.Threading.Tasks;
 using BaseAspNetAngularUnity.DataAccess;
 using BaseAspNetAngularUnity.DataAccess.Models;
 using Microsoft.AspNet.Identity;
@@ -16,6 +18,7 @@ namespace BaseAspNetAngularUnity.DataAccess
 		ApplicationUser GetApplicationUser(string userName);
 		IQueryable<ApplicationUser> AllUsers();
 		bool IsInRole(string userId, string role);
+		Task<ClaimsIdentity> CreateIdentityAsync(ApplicationUser applicationUser, string authenticationType);
 	}
 
 	public class UserManagerProxy : IUserManagerProxy
@@ -59,6 +62,9 @@ namespace BaseAspNetAngularUnity.DataAccess
 			return UserManager.IsInRole(userId, role);
 		}
 
-
+		public Task<ClaimsIdentity> CreateIdentityAsync(ApplicationUser applicationUser, string authenticationType)
+		{
+			return UserManager.CreateIdentityAsync(applicationUser, authenticationType);
+		}
 	}
 }

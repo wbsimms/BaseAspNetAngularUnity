@@ -18,8 +18,8 @@
 		"mergeAppDomains" : true,
 		"name" : "BaseAspNetAngularUnity",
 		"matchRules" : [{
-				"matchData" : "QTAgent32.exe",
-				"type" : "Exe"
+				"matchData" : "QTAgent32.*\\.exe",
+				"type" : "Regex"
 			}
 		],
 		"preCoverageFilter" : {

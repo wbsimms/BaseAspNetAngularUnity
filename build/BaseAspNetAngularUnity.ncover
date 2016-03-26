@@ -18,7 +18,7 @@
 		"mergeAppDomains" : true,
 		"name" : "BaseAspNetAngularUnity",
 		"matchRules" : [{
-				"matchData" : "QTAgent32_40.exe",
+				"matchData" : "QTAgent32.exe",
 				"type" : "Exe"
 			}
 		],
@@ -34,6 +34,13 @@
                     "field": "Module",
                     "condition": "Matches",
                     "value": "BaseAspNetAngularUnity.dll",
+                    "serverRule": false
+                },
+                {
+                    "include": true,
+                    "field": "Module",
+                    "condition": "Matches",
+                    "value": "BaseAspNetAngularUnity.DataAccess.dll",
                     "serverRule": false
                 },
                 {

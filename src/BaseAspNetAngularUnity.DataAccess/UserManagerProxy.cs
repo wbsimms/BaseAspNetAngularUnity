@@ -6,7 +6,7 @@ using BaseAspNetAngularUnity.DataAccess.Models;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 
-namespace EHRProfiler.DataAccess
+namespace BaseAspNetAngularUnity.DataAccess
 {
 	public interface IUserManagerProxy
 	{

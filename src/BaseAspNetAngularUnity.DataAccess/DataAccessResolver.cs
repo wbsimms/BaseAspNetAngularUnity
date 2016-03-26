@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using BaseAspNetAngularUnity.DataAccess.Models;
 using BaseAspNetAngularUnity.DataAccess.Repository;
-using EHRProfiler.DataAccess;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Practices.Unity;

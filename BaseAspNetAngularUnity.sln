@@ -27,6 +27,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseAspNetAngularUnity.DataAccess.Test", "src\BaseAspNetAngularUnity.DataAccess.Test\BaseAspNetAngularUnity.DataAccess.Test.csproj", "{003A96F2-649F-4B47-8DAB-6C6273E77BD4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{756ADF5C-00FA-48D1-9174-10FACDA9EDD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{756ADF5C-00FA-48D1-9174-10FACDA9EDD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{756ADF5C-00FA-48D1-9174-10FACDA9EDD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{003A96F2-649F-4B47-8DAB-6C6273E77BD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{003A96F2-649F-4B47-8DAB-6C6273E77BD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{003A96F2-649F-4B47-8DAB-6C6273E77BD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{003A96F2-649F-4B47-8DAB-6C6273E77BD4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
